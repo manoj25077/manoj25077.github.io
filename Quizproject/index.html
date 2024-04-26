@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    
+
+<body  style="background-color: #D0D3D4;">
+    <div id="page" style="background-color: cornflowerblue;">
+        <h1>login</h1>
+        <p style="font-size: 20px;font-weight: bold;">Email</p>
+        <input class="inp" type="text" placeholder=""><br>
+        <p style="font-size: 20px;font-weight: bold;">Password</p>
+        <input class="inp" type="password"><br><br>
+        <button type="submit" class="sub" onclick="A1()">submit</button>
+       
+    </div>
+
+    <div id="p1" style="display: none;"> 
+    <div id="p1">
+        <div class="timer">
+           <div>Total Time</div>
+           <div id="timer">5</div>
+        </div>
+
+        <div id="q1" class="QA">
+            <h2> Which organization defines the Web Standards?</h2>
+            <button type="submit" style="margin-left: 3%;" id="QB" onclick="wrong1()">Microsoft Corporation</button>
+            <button type="submit" id="QB" onclick="wrong1()">IBM Corporation</button>
+            <button type="submit" id="QB" onclick="correct1()">World Wide Web Consortium</button>
+            <button type="submit" id="QB" onclick="wrong1()">Apple Inc</button>
+            <br><br><br>
+        </div>
+
+        <div id="q2" class="QA">
+            <h2>Whichg of the following is used to create web pages?</h2>
+            <button type="submit" id="QB" style="margin-left: 3%;" onclick="correct2()">HTML</button>
+            <button type="submit" id="QB" onclick="wrong2()">C</button>
+            <button type="submit" id="QB" onclick="wrong2()">JVM</button>
+            <button type="submit" id="QB" onclick="wrong2()">DTD</button>
+            <br><br><br>
+        </div>
+
+        <div id="q3" class="QA">
+            <h2> HTML language is a set of markup___</h2>
+            <button type="submit" id="QB" style="margin-left: 3%;" onclick="wrong3()">Attributes</button>
+            <button type="submit" id="QB" onclick="correct3()">Tags</button>
+            <button type="submit" id="QB" onclick="wrong3()">Sets</button>
+            <button type="submit" id="QB" onclick="wrong3()">Groups</button>
+            <br><br><br>
+        </div>
+
+        <div id="q4" class="QA">
+            <h2>HTML was first proposed in ear___</h2>
+            <button type="submit"id="QB" style="margin-left: 3%;" onclick="wrong4()">1980</button>
+            <button type="submit"id="QB" onclick="correct4()">1990</button>
+            <button type="submit"id="QB" onclick="wrong4()">1995</button>
+            <button type="submit"id="QB" onclick="wrong4()">2000</button>
+            <br><br><br>
+        </div>
+        <button id="res" type="submit" onclick="total()">Result</button>
+    </div>
+
+
+    <div id="result" style="display: none;">
+        <h3 id="h3"class="total">total</h3>
+    </div>
+
+    <script src="./script.js"> </script>
+</body>
+
+</html>
