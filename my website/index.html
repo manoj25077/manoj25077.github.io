@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/images-removebg-preview (1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#servises">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" class="fas"  onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" class="fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="col">
+                <div class="header-text-1">
+                    <h1>Hi, I'm<span> Manoj Babu </span><br> From sivagangai</h1>
+                    <p>Python Full Stack Developer</p>
+                    <a href="images/my cv.pdf" class="btn1">View resume</a>
+                </div>
+
+                <div class="header-text-2">
+                    <img src="images/home-right.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------about--------- -->
+
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/images (1).jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title-1">About Me</h1>
+                    <p>Hello and welcome to my portfolio website! I am a passionate and aspiring Python full-stack
+                        developer
+                        eager to kick-start my career in the exciting world of web development.</p>
+                    <h3 class="sub-title-2">My Background</h3>
+                    <p>I recently graduated with a degree in [Bsc-Chemistry,(2021)], where I gained a
+                        solid foundation in programming, software development, and web technologies. During my academic
+                        journey, I developed a keen interest in Python and its versatility in building both front-end
+                        and
+                        back-end applications.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Technical Skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Technical Skills">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML5 , CSS3 ,Bootstrap , Javascript , React js</li>
+                            <li><span>Backend</span><br>Python , Mysql , Django</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li>Observation Teamwork</li>
+                            <li> Problem Solving and Critical Thinking</li>
+                            <li> Collaboration and Teamwork</li>
+                            <li> Time Management and Prioritization</li>
+                            <li> Adaptability and Flexibility</li>
+                            <li> Creativity and Innovation</li>
+                            <li> Continuous Learning and SelfImprovement</li>
+                            <li> Leadership and Mentoring</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <table>
+                            <tr>
+                                <th>Course</th>
+                                <th>Name of Institution</th>
+                                <th>Board</th>
+                                <th>Year of Passing</th>
+                                <th>Percentage</th>
+                            </tr>
+                            <tr>
+                                <td>B.sc(Chemistry)</td>
+                                <td>E G S Pillay Arts & Science College, <br>Nagapattinam</td>
+                                <td>Bharathidasan University</td>
+                                <td>2018-2021</td>
+                                <td>CGPA/A+7.2</td>
+                            </tr>
+                            <tr>
+                                <td>HSC</td>
+                                <td>Government Higher Secondary School,<br>Maravamangalam</td>
+                                <td>State Board</td>
+                                <td>2017-2018</td>
+                                <td>61.6%</td>
+                            </tr>
+                            <tr>
+                                <td>SSLC</td>
+                                <td>Government Higher Secondary School,<br>Maravamangalam</td>
+                                <td>State Board</td>
+                                <td>2015-2016</td>
+                                <td>59.2%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Services----------->
+
+    <div id="servises">
+        <div class="container">
+            <h1 class="sub-title">My Servises</h1>
+            <div class="servises-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam ab architecto aliquam
+                        quas nemo error, voluptas fugiat deserunt placeat.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam ab architecto aliquam
+                        quas nemo error, voluptas fugiat deserunt placeat.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam ab architecto aliquam
+                        quas nemo error, voluptas fugiat deserunt placeat.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------Projects-------- -->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>home interior design</h3>
+                        <p>I've curated a luxurious home interior with elegantly furnished rooms, a state-of-the-art
+                            kitchen equipped with high-end appliances, and a stylish outdoor space perfect for
+                            relaxation and entertainment.</p>
+                        <a href="C:\Users\WELCOME\Desktop\homedesign\index.html"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>furniture design</h3>
+                        <p> I've designed a modern, minimalist home interior with a neutral color palette, integrating
+                            sustainable materials for a cozy and eco-friendly living space.</p>
+                        <a href="C:\Users\WELCOME\Desktop\interiordesign\index.html"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.0.jpeg" alt="">
+                    <div class="layer">
+                        <h3>quiz game</h3>
+                        <p>The Quiz project engages users with interactive questions across diverse topics, promoting
+                            learning, knowledge retention, and skills assessment in an entertaining format. It also
+                            provides real-time feedback and performance analytics, enabling participants to track their
+                            progress and identify areas for improvement effectively.
+                        </p>
+                        <a href="C:\Users\WELCOME\Desktop\Quizproject\index.html"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.jpeg" alt="">
+                    <div class="layer">
+                        <h3>student management system</h3>
+                        <p>The Student Management System project automates student registration, attendance, and
+                            academic record-keeping, optimizing administrative tasks and ensuring data integrity.
+                            Additionally, it fosters communication among educators, students, and parents, promoting
+                            transparency and collaboration for effective educational management.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.jpeg" alt="">
+                    <div class="layer">
+                        <h3>library management system</h3>
+                        <p>The Library Management System project automates book cataloging, lending, and return
+                            processes, improving operational efficiency and user experience for library patrons. It also
+                            facilitates inventory tracking and reporting, ensuring accurate book availability
+                            information and streamlined library resource management.
+                        </p>
+                        <a href="http://127.0.0.1:8000/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-6.jpeg" alt="">
+                    <div class="layer">
+                        <h3>blood bank management</h3>
+                        <p>A Django-based Blood Bank Management System enables users to register as donors or recipients and facilitates efficient blood inventory management by connecting donors with recipients based on compatibility and location.</p>
+                        <a href="http://127.0.0.1:5000/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------contacts-------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>manojmanoj25077@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8524998365</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my cv.pdf" Download="images/my cv.pdf" class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="em" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;, Manoj Babu Made with <i class="fa-solid fa-heart"></i> by Easy tutorials </p>
+        </div>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
